@@ -48,7 +48,7 @@ class MultiModalParser(BaseParser):
             "name": "MultiModalParser",
             "parameters": {
                 "model_configuration": {
-                    "name" : "truefoundry/openai-main/gpt-4o-mini"
+                    "name" : "openai/gpt-4o-mini"
                 },
                 "prompt": "You are a PDF Parser ....."
             }
@@ -71,7 +71,7 @@ class MultiModalParser(BaseParser):
         else:
             # Truefoundry specific model configuration
             self.model_configuration = ModelConfig(
-                name="truefoundry/openai-main/gpt-4o-mini",
+                name="openai/gpt-4o-mini",
                 type=ModelType.chat,
             )
 
@@ -240,4 +240,4 @@ Conclude with a summary of the key findings from your analysis and any recommend
             return final_texts
         except Exception as e:
             logger.exception(f"Final Exception: {e}")
-            raise e
+            return []

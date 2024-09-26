@@ -93,4 +93,4 @@ class UnstructuredIoParser(BaseParser):
             return final_texts
         except Exception as e:
             logger.exception(f"Final Exception: {e}")
-            raise e
+            return []

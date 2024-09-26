@@ -74,7 +74,7 @@ def get_parser_for_extension(
     # Extension not given in parser map use the default registry
     if file_extension not in parsers_map:
         # get the first parser name registered with the extension
-        parser_name = PARSER_REGISTRY_EXTENSIONS[file_extension][0]
+        parser_name = "SourceCodeParser"
         logger.debug(
             f"Parser map not found in the collection for extension {file_extension}. Hence, using parser {parser_name}"
         )

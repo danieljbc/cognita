@@ -3,7 +3,7 @@ QUERY_WITH_VECTOR_STORE_RETRIEVER_SIMILARITY = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -25,7 +25,7 @@ QUERY_WITH_VECTOR_STORE_RETRIEVER_MMR = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -53,7 +53,7 @@ QUERY_WITH_VECTOR_STORE_RETRIEVER_SIMILARITY_SCORE = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -78,7 +78,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_RETRIEVER = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -106,7 +106,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_RETRIEVER_SEARCH_TYPE_MMR = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -139,7 +139,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_RETRIEVER_SEARCH_TYPE_SIMILARITY_WITH_SCORE = 
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -168,7 +168,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_SIMILARITY = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -177,7 +177,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_SIMILARITY = {
         "search_type": "similarity",
         "search_kwargs": {"k": 5},
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "provider": "truefoundry",
             "parameters": {"temperature": 0.9},
         },
@@ -199,7 +199,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_MMR = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -211,7 +211,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_MMR = {
             "fetch_k": 10,
         },
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "provider": "truefoundry",
             "parameters": {"temperature": 0.9},
         },
@@ -232,7 +232,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_SIMILARITY_SCORE = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -241,7 +241,7 @@ QUERY_WITH_MULTI_QUERY_RETRIEVER_SIMILARITY_SCORE = {
         "search_type": "similarity_score_threshold",
         "search_kwargs": {"score_threshold": 0.7},
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "provider": "truefoundry",
             "parameters": {"temperature": 0.9},
         },
@@ -264,7 +264,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_MMR = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -278,7 +278,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_MMR = {
             "fetch_k": 30,
         },
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "parameters": {"temperature": 0.9},
         },
     },
@@ -299,7 +299,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_SIMILARITY = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -310,7 +310,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_SIMILARITY = {
         "search_type": "similarity",
         "search_kwargs": {"k": 10},
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "provider": "truefoundry",
             "parameters": {"temperature": 0.1, "max_tokens": 1024},
         },
@@ -332,7 +332,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_SIMILARITY_SCORE = {
     "collection_name": "creditcard",
     "query": "Explain in detail different categories of credit cards",
     "model_configuration": {
-        "name": "truefoundry/openai-main/gpt-4o-mini",
+        "name": "openai/gpt-4o-mini",
         "parameters": {"temperature": 0.1, "max_tokens": 1024},
     },
     "prompt_template": PROMPT,
@@ -343,7 +343,7 @@ QUERY_WITH_CONTEXTUAL_COMPRESSION_MULTI_QUERY_RETRIEVER_SIMILARITY_SCORE = {
         "search_type": "similarity_score_threshold",
         "search_kwargs": {"score_threshold": 0.7},
         "retriever_llm_configuration": {
-            "name": "truefoundry/openai-main/gpt-4o-mini",
+            "name": "openai/gpt-4o-mini",
             "provider": "truefoundry",
             "parameters": {"temperature": 0.1, "max_tokens": 1024},
         },
